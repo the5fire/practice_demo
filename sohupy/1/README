@@ -1,0 +1,2 @@
+这个程序是使用BeautifulSoup这个库来做的。
+只需运行main.py -u http://www.sohu.com -d 'a=1,b=2,c=3' -o /tmp/index.html

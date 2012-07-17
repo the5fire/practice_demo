@@ -1,0 +1,6 @@
+运行方法：
+    python checker.py -c confile.ini -t 20 --debug(用来显示检查的每个url)
+
+workermanager.py中实现了一个简单的线程池可用来进行并发处理
+
+config.ini中是我随便放的测试数据
