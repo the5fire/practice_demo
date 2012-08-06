@@ -3,7 +3,7 @@
 import tornado.ioloop
 import sys
 
-from urls import application
+from application import application
 
 PORT = '8080'
 
