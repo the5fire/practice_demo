@@ -1,0 +1,1 @@
+recursive-include djangodemo *.html *.js *.css
