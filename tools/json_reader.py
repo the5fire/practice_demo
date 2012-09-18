@@ -7,12 +7,7 @@ import json
 HEAD_START = 0.1 #Seconds
 SECRET_LENGTH = 100
 SAMPLE_LIST = [
-    'http://t2.m.sohu.com/api/platform/fp/?fragment_id=21992',
-    'http://t2.m.sohu.com/api/platform/np/?fragment_ids=22078',
-    'http://t2.m.sohu.com/api/platform/nl/?channel_id=326&page=1&page_size=10',
-    'http://t2.m.sohu.com/api/platform/n/?id=352760696&page=1',
-    'http://t2.m.sohu.com/api/platform/pl/?channel_id=71&timestamp=1336116695.0&page_size=10',
-    'http://t2.m.sohu.com/api/platform/p/?id=334926',
+    'http://m.weather.com.cn/data/101010100.html',
 ]
 
 class Client(wx.App):
