@@ -1,10 +1,11 @@
 #coding:utf-8
 
 import tornado.web
+from model.entity import Entity
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render('index.html')
-        #self.write("hello, world!")
+        entity = Entity.get('the5fire\'s blog')
+        self.render('index.html', entity = entity)
 
 
