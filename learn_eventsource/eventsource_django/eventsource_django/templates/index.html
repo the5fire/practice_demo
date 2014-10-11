@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>EventSource-Dango-Demo by the5fire</title>
+<script>
+    var source=new EventSource("/eventsource/");
+    source.onmessage=function(event)
+    {
+        document.getElementById("result").innerHTML+=event.data + "<br />";
+    };
+</script>
+</head>
+<body>
+<div id="result">
+</div>
+</body>
+</html>
