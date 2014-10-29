@@ -1,12 +1,26 @@
 <html>
 <head>
 <title>EventSource-Dango-Demo by the5fire</title>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
     var source=new EventSource("/eventsource/");
     source.onmessage=function(event)
     {
         document.getElementById("result").innerHTML+=event.data + "<br />";
     };
+    console.log('dd');
+    function chick() {
+        $.ajax( "/ajax/" )
+        .done(function(data) {
+            document.getElementById("result").innerHTML+= data + " from ajax<br />";
+        })
+        .fail(function() {
+        })
+        .always(function() {
+            console.log('lll');
+        });
+    }
+    setInterval(chick, 2000);
 </script>
 </head>
 <body>
